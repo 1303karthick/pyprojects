@@ -22,7 +22,7 @@ def FlightClass(FlightC):
     print("Welcome To {} Class Ticket Booking , Please Enter No of Tickets below ".format(temp[0]))
     TicketNos = int(input("No of Tickets : "))
     price = TicketNos * temp[1]
-    FlightChoice_dict[FlightC][2]-=t
+    FlightChoice_dict[FlightC][2]-=TicketNos
     return price,temp[0]
 
 class Flight_Ticket(object):
@@ -133,4 +133,4 @@ user_input=int(input("Press 1 To Book a Ticket \n"
 if user_input == 1:
     customer1=Flight_Ticket(name)
     customer1.book_ticket()
-t=book_ticket()
+    customer1.book_ticket()
